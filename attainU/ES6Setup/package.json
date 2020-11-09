@@ -1,0 +1,27 @@
+{
+  "name": "es6setup",
+  "version": "1.0.0",
+  "description": "Make a file named as .babelrc\r {\r \t\"presets\": [\"@babel/preset-env\"],\r \t\"plugins\": [\"@babel/plugin-proposal-class-properties\"]\r }\r Install the babel dev dependencies\r npm i -D @babel/cli @babel/core @babel/node @babel/plugin-proposal-class-properties @babel/preset-env babel-loader babel-polyfill babel-watch rimraf\r Add scripts for the development & production mode\r \"scripts\": {\r     \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\",\r     \"dev-start\": \"NODE_ENV=dev babel-watch ./src/index\",\r     \"start\": \"npm run build && node ./dist/index\",\r     \"build\": \"npm run clean && npm run babel-build\",\r     \"babel-build\": \"babel -d ./dist ./src -s\",\r     \"clean\": \"rimraf ./dist && mkdir dist\"\r }",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-watch ./src/index.js",
+    "clean": "rimraf ./dist && mkdir dist",
+    "babel-build": "babel -d ./dist ./src -s",
+    "build": "npm run clean && npm run babel-build"
+
+  },
+  "author": "Tezaswi Raj",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-watch": "^7.0.0",
+    "rimraf": "^3.0.2"
+  }
+}

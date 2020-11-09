@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+}
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 60px;
+    background-color: blueviolet;
+}
+.sidebar {
+    display: inline-block;
+    width: 25%;
+    background-color: blue;
+   
+}
+.main {
+    display: inline-block;
+    /*width: 74%;*/
+    /*height: 500px;*/
+    flex-grow: 1;
+    background-color: rgb(231, 231, 18);
+    color: rgb(231, 231, 18);
+}
+.wrapper { 
+    padding-top: 60px;
+    display: flex;
+    min-height: 500px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+}

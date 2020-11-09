@@ -1,0 +1,30 @@
+#intro{
+    background-color: beige;
+}
+#gallery{
+    background-color: ivory;
+    border: 1px solid red;
+}
+table,tr,th,td{
+    border: 1px solid greenyellow;
+}
+b{
+    color:hsla(350, 90%, 51%, 0.959)
+}
+em{
+    background-color: purple;
+}
+#gallery-h3{
+    color: red;
+}
+#contact-h2{
+    color: royalblue;
+}
+img{
+    border-width: 3px;
+    border-color: magenta; 
+    border-style: solid;
+}
+.bird{
+    
+}

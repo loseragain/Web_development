@@ -1,0 +1,22 @@
+div{
+    display:inline-block;
+    position: relative;
+    top: 0;
+    left:0;
+    font-size: 0;
+
+}
+img {
+    display:inline-block
+}
+p {
+    font-size:medium ;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border:1px solid orange;
+    margin:0;
+    text-align:center;
+}
